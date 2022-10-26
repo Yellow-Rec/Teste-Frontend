@@ -1,0 +1,43 @@
+@import "../../styles/utils/variables";
+@import "../../styles/utils/mixins";
+
+.explore-container {
+  height: 85%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 170rem;
+}
+
+.list-title {
+  color: getColor(secondary);
+  font-size: getFontSize(xl) * 1.25;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: underline getColor(primary);
+
+  @media screen and (max-width: 50rem) {
+    font-size: getFontSize(md) * 1.5;
+  }
+}
+
+.yellowRec-container {
+  color: getColor(secondary);
+  font-size: getFontSize(xl);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.15);
+  width: 80%;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.25);
+  padding: 3rem;
+  border-radius: getBorder(card);
+}
+
+.list-description {
+  margin: 1.5rem 0rem 0rem 0rem;
+  text-shadow: 2px 1px 1px getColor(primary);
+
+  @media screen and (max-width: 50rem) {
+    font-size: getFontSize(md);
+  }
+}
